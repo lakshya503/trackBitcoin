@@ -2,7 +2,7 @@ This project was coded in Python 3.9.6 but it should be compatible with any Pyth
 
 
 # trackBTC.py 
-This file holds all the key functioncality of the project. At a high level, I make use of two tables and Blockchain.com's APIs to serve the user. The two databases used are - 
+This file holds all the key functioncality of the project. At a high level, I make use of two tables and Blockchain.com's APIs to serve the user. The database serves as a caching layer since retrieveing the entries from a local database is much faster than getting the results over the net. If the user does not require the most updated balances/ transactions, I provide the results by querying the database. Otherwise, I make the required network calls. The two tables and APIs used in this project are - 
 
 1) address_details (address, balance, timestamp) - This table has address as a primary key and is used to amintain the balance of each address as of a current timestamp 
 2) txn (txn_id, source_addr, dest_addr, amount) - This table has txn_id as a primary key and is used to keep track of all the transactions that a certain address has been involved in. 
