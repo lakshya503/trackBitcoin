@@ -1,3 +1,6 @@
+This project was coded in Python 3.9.6 but it should be compatible with any Python 3+. No other special requirements to run this project. 
+
+
 # trackBTC.py 
 This file holds all the key functioncality of the project. At a high level, I make use of two tables and Blockchain.com's APIs to serve the user. The two databases used are - 
 
